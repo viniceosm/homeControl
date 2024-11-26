@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Atualizar arquivos da branch master",
+      "type": "shell",
+      "command": "git checkout main; git checkout origin/master -- index.html dist/; git add index.html dist/",
+      "problemMatcher": []
+    },
+    {
+      "label": "Commitar e fazer push",
+      "type": "shell",
+      "command": "git commit -m '${input:commitMessage}'; git push github main",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "commitMessage",
+      "type": "promptString",
+      "description": "Digite a mensagem de commit",
+      "default": "Atualização de arquivos"
+    }
+  ]
+}
