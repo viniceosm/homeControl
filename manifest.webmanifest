@@ -1,0 +1,27 @@
+{
+  "name": "Home Control App",
+  "short_name": "Home Control",
+  "description": "Controle financeiro e tarefas da casa em um webapp instalavel.",
+  "id": "/homeControl/",
+  "start_url": "/homeControl/",
+  "scope": "/homeControl/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/homeControl/icons/icon-500.png",
+      "sizes": "500x500",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/homeControl/icons/icon-500.png",
+      "sizes": "500x500",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
